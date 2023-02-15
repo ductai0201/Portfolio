@@ -1,0 +1,19 @@
+{
+  "menus": [
+    {
+      "id": 2,
+      "name": "Home update",
+      "link": "/"
+    },
+    {
+      "name": "About",
+      "link": "/about",
+      "id": 3
+    },
+    {
+      "name": "Blog",
+      "link": "/blog",
+      "id": 4
+    }
+  ]
+}
