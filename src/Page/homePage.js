@@ -1,6 +1,10 @@
+import Header from "../components/header";
+import MainNav from "../components/nav";
 
 const homePage = () => {
-  return `<div>homePage</div>`;
+  return `
+   ${Header()}
+  `;
 };
 
 export default homePage;
