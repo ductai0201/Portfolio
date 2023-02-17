@@ -1,9 +1,12 @@
 import Header from "../components/header";
-import MainNav from "../components/nav";
+import Hero from "../components/hero";
+import mainContent from "./mainContent";
 
 const homePage = () => {
   return `
    ${Header()}
+   ${Hero()}
+   ${mainContent()}
   `;
 };
 

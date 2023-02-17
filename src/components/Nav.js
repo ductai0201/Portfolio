@@ -2,28 +2,33 @@ import { menus } from "../data";
 
 const MainNav = () => {
   return `
-                <nav class="navbar navbar-default navbar-sticky">
-                        <div class="container-fluid">
-                                
-                                <div class="navbar-header">
-                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                                </div>
-                                
-                                <div class="navbar-collapse collapse">
+                <nav id="primary-navigation" class="site-navigation">
+                        <div class="container">
+                                <div class="navbar-header page-scroll">
+
+                                        <button type="button" class="navbar-toggle collapsed" data-target="#portfolio-perfect-collapse" aria-expanded="false" >
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        </button>
                                         
-                                        <ul class="nav navbar-nav">
-                                                ${menus
-                                                  .map((nav) => {
-                                                    return `
-                                                        <li class="active"><a href="${nav.link}">${nav.name}</a></li>
-                                                        `;
-                                                  })
-                                                  .join("")}
-                                                
+                                        <a href="#hero" class="site-logo"><img src="assets/img/logo.png" alt="logo"></a>
+
+                                </div>
+
+                                <div class="main-menu" id="portfolio-perfect-collapse">
+
+                                        <ul class="nav navbar-nav navbar-right d-flex flex-row" style="width: auto;">
+                                                ${menus.map((menu) => {
+                                                return `
+                                                <li class="d-inline-block"><a href="#hero">${menu.name}</a></li>
+                                                `
+                                                }).join(' ')}
                                         </ul>
-                                
-                                </div>			
-                        </div>	
+                        
+                                </div>
+
+                        </div>
                 </nav>`;
 };
 
