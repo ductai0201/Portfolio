@@ -1,6 +1,6 @@
 import { useEffect, useState } from "../lib";
 
-const about = () => {
+const About = () => {
   const [about, setAbout] = useState([]);
   useEffect(() => {
     fetch("http://localhost:3000/about")
@@ -19,11 +19,11 @@ const about = () => {
                         return `<p>${content.content}</p>`
                       })}
                       
-                      <a href="http://www.grad.illinois.edu/sites/default/files/pdfs/cvsamples.pdf" class="btn btn-fill" target="_blank" download>Download my cv</a>
+                      <a href="#" class="btn btn-fill" target="_blank" download>Download my cv</a>
                   </div>
               </div>
           </div>
       </section>`;
 };
 
-export default about;
+export default About;

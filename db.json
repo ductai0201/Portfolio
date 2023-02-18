@@ -5,5 +5,19 @@
       "id": 1,
       "content": "I'm hist. I'm 19 years old. I'm an emerging website developer. I am a student at FPT Polytechnic. If you have difficulties then contact me "
     }
+  ],
+  "skills": [
+    {
+      "skill": "HTML/CSS",
+      "id": 1
+    },
+    {
+      "skill": "JAVASCRIPT",
+      "id": 2
+    },
+    {
+      "skill": "PHP",
+      "id": 3
+    }
   ]
 }
