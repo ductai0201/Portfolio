@@ -45,7 +45,9 @@ const AdminSkills = () => {
                             <button data-id="${
                               skill.id
                             }" class="btn btn-danger btn-remove">Remove</button>
-                            <a href="/#/admin/about/ID/edit">Edit</a>
+                            <a href="/#/admin/skill/${
+                              skill.id
+                            }/edit">Edit</a>
                             </td>
                         </tr>
                       `;

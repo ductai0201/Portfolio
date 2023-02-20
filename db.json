@@ -1,5 +1,51 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "name": "Dự án 2",
+      "descript": "PC stands for \"Personal Computer\". It refers to a type of computer that is designed for individual use and is intended to be used by one person at a time. PCs typically run on operating systems such as Microsoft Windows, macOS, or Linux, and are used for a wide variety of tasks including word processing, web browsing, gaming, and multimedia production.",
+      "avt": "https://res.cloudinary.com/dtiwyksp8/image/upload/v1676926603/Portfolio_ECMA/ot578ykas9heefat2qin.jpg",
+      "album": [
+        "https://res.cloudinary.com/dtiwyksp8/image/upload/v1676926600/Portfolio_ECMA/lnsvwiepcjd8rcjgaodl.jpg",
+        "https://res.cloudinary.com/dtiwyksp8/image/upload/v1676926601/Portfolio_ECMA/lugikndocbfpy2eqzxce.jpg",
+        "https://res.cloudinary.com/dtiwyksp8/image/upload/v1676926602/Portfolio_ECMA/rcthher0rrgzzws72fop.jpg"
+      ],
+      "git": "https://github.com/ductai0201/Portfolio",
+      "preview": "https://github.com/ductai0201/Portfolio",
+      "time": "30h",
+      "technology": "HTML,CSS,JS",
+      "id": 4
+    },
+    {
+      "name": "Dự án 1",
+      "descript": "PC stands for \"Personal Computer\". It refers to a type of computer that is designed for individual use and is intended to be used by one person at a time. PCs typically run on operating systems such as Microsoft Windows, macOS, or Linux, and are used for a wide variety of tasks including word processing, web browsing, gaming, and multimedia production.",
+      "avt": "https://res.cloudinary.com/dtiwyksp8/image/upload/v1676927020/Portfolio_ECMA/cegrpbuteuptl6iuwwqz.jpg",
+      "album": [
+        "https://res.cloudinary.com/dtiwyksp8/image/upload/v1676927016/Portfolio_ECMA/nbpt9qzm2uhiecrobmeh.jpg",
+        "https://res.cloudinary.com/dtiwyksp8/image/upload/v1676927017/Portfolio_ECMA/hiufdroggasseuvjurob.jpg",
+        "https://res.cloudinary.com/dtiwyksp8/image/upload/v1676927018/Portfolio_ECMA/srqgblchlxnsafi1p73h.jpg"
+      ],
+      "git": "https://github.com/ductai0201/Portfolio",
+      "preview": "https://github.com/ductai0201/Portfolio",
+      "time": "30h",
+      "technology": "HTML,CSS,JS",
+      "id": 5
+    },
+    {
+      "name": "Dự án 3",
+      "descript": "PC stands for \"Personal Computer\". It refers to a type of computer that is designed for individual use and is intended to be used by one person at a time. PCs typically run on operating systems such as Microsoft Windows, macOS, or Linux, and are used for a wide variety of tasks including word processing, web browsing, gaming, and multimedia production.",
+      "avt": "https://res.cloudinary.com/dtiwyksp8/image/upload/v1676927086/Portfolio_ECMA/bznm9vabhpnj9g1dtydt.jpg",
+      "album": [
+        "https://res.cloudinary.com/dtiwyksp8/image/upload/v1676927082/Portfolio_ECMA/fyy2yx4iba6vsafxucts.jpg",
+        "https://res.cloudinary.com/dtiwyksp8/image/upload/v1676927083/Portfolio_ECMA/cnl4wm7rwkr6fqbrefbg.jpg",
+        "https://res.cloudinary.com/dtiwyksp8/image/upload/v1676927084/Portfolio_ECMA/serbvevk3axnfv329a52.jpg"
+      ],
+      "git": "https://github.com/ductai0201/Portfolio",
+      "preview": "https://github.com/ductai0201/Portfolio",
+      "time": "30h",
+      "technology": "HTML,CSS,JS",
+      "id": 6
+    }
+  ],
   "about": [
     {
       "id": 1,
@@ -18,6 +64,22 @@
     {
       "skill": "PHP",
       "id": 3
+    }
+  ],
+  "service": [
+    {
+      "id": 3,
+      "title": "Front-end",
+      "content": "As a javascript developer, I have experience in HTML5 and CSS3 techniques working with jQuery or more advanced javascript MVC frameworks such as angular"
+    }
+  ],
+  "counter": [
+    {
+      "id": 3,
+      "years": "0.5",
+      "yearsText": "Years Experience",
+      "projects": "3",
+      "projectsText": "Projects Delivered"
     }
   ]
 }

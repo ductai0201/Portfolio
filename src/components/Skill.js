@@ -15,21 +15,19 @@ const Skill = () => {
                     <img src="assets/img/lines.svg" class="img-lines" alt="lines">
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
-                    ${skills.map((skill) => {
-                      return `
-                        <div class="skill">
-                            <h4>${skill.skill}</h4>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-transitiongoal="100">
-                            </div>
-                        </div>
-                        `
-                    }).join(' ')}
+                    <div class="row">
+                        ${skills.map((skill)=>{
+                            return `
+                            <div class="col-sm-4">
+                                <h4>${skill.skill}</h4>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" data-transitiongoal="100" aria-valuenow="100" style="width: 100%;"></div>
+                                </div>
+                            </div>    
+                            `
+                        }).join('')}
+                    </div> 
                         
-                        
-                    </div>
-                    
                 </div>
             </div>
         </section>      

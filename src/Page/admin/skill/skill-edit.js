@@ -1,4 +1,5 @@
-const AdminSkillEdit = () => {
+const AdminSkillEdit = ({id}) => {
+  console.log(id);
   return `<div>AdminSkillEdit</div>`;
 };
 
