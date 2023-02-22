@@ -22,7 +22,7 @@ const Projects = () => {
                   <img src="${project.avt}" class="img-res" alt="">
                   <div class="portfolio-item-info">
                       <h4>${project.name}</h4>
-                      <a href="#" data-toggle="modal" data-target="#${project.id}"><span class="glyphicon glyphicon-eye-open"></span></a>
+                      <a href="/#/project/${project.id}" data-toggle="modal" ><span class="glyphicon glyphicon-eye-open"></span></a>
                       <a href="#"><span class="glyphicon glyphicon-link"></span></a>
                   </div><!-- /.portfolio-item-info -->
               </div><!-- /.portfolio-item -->

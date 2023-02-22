@@ -108,6 +108,20 @@
       "password": "$2a$10$P8.amVdTURZJ8sM4l9rwuOI96YwFBI7gZ0LjBaeb.eG3LTjQ7X9uW",
       "name": "ahihi",
       "id": 4
+    },
+    {
+      "email": "ductaiuc@gmail.com.vn",
+      "password": "$2a$10$g2a6mz0re98Grwaza/dIjePV5BjQna7/Bwb2Ab/zm4AwAaN3ia78G",
+      "name": "ductai020190",
+      "id": 5
+    }
+  ],
+  "infor": [
+    {
+      "name": "Robinhood Nguyễn",
+      "content": "Font-end Developer",
+      "avt": "https://res.cloudinary.com/dtiwyksp8/image/upload/v1677095972/Portfolio_ECMA/o8ehyohm8taghnnd02om.png",
+      "id": 3
     }
   ]
 }

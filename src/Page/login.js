@@ -13,11 +13,18 @@ const login = () => {
 
       let response = await fetch("http://localhost:3000/users");
       let data = await response.json();
-	  setUser(data);
-      const user = data.find((user) => user.name === formName && bcrypt.compareSync(formPass, user.password));
+      setUser(data);
+      const user = data.find(
+        (user) =>
+          user.name === formName && bcrypt.compareSync(formPass, user.password)
+      );
 
       if (user) {
-        return Swal.fire("Good job!", "You clicked the button!", "success").then(window.location.href="/#/");
+        return Swal.fire(
+          "Good job!",
+          "You clicked the button!",
+          "success"
+        ).then(() => (window.location.href = "/#/"));
       } else {
         return Swal.fire({
           icon: "error",
@@ -57,11 +64,10 @@ const login = () => {
             "Content-Type": "application/json",
           },
           body: JSON.stringify(newForm),
-		  
         });
-		
+
         Swal.fire("Good job!", "You clicked the button!", "success");
-		register.reset();
+        register.reset();
       } else {
         Swal.fire({
           icon: "error",

@@ -19,14 +19,17 @@ import AdminCounterEdit from "./src/Page/admin/counter/counter-edit";
 import AdminCounter from "./src/Page/admin/counter/counter";
 import AdminContact from "./src/Page/admin/contact/contact";
 import login from "./src/Page/login";
-import AdminInfor from "./src/Page/admin/infor/infor-add";
+
 import AdminInforAdd from "./src/Page/admin/infor/infor-add";
+import AdminInfor from "./src/Page/admin/infor/infor";
+import projectDetail from "./src/Page/projectDetail";
 // import projects from "./src/Page/projects";
 
 const app = document.querySelector("#app");
 
 router.on("/", () => render(homePage, app));
 router.on("/login", () => render(login, app));
+router.on("/project/:id", ({data}) => render(()=>projectDetail(data), app));
 // router.on("/projects", () => render(projects, app));
 //Admin
 router.on("/admin/about/add",()=> render(AdminAboutAdd,app));
