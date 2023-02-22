@@ -19,7 +19,7 @@ const About = () => {
                         return `<p>${content.content}</p>`
                       })}
                       
-                      <a href="#" class="btn btn-fill" target="_blank" download>Download my cv</a>
+                      <a href="${about.link}" class="btn btn-fill" target="_blank" download>Download my cv</a>
                   </div>
               </div>
           </div>

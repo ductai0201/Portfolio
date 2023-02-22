@@ -1,4 +1,5 @@
 import about from "../components/about";
+import Contact from "../components/contact";
 import CounterSite from "../components/CounterSite";
 import Projects from "../components/Projects";
 import service from "../components/service";
@@ -13,6 +14,7 @@ const mainContent = () => {
     ${service()}
     ${Projects()}
     ${CounterSite()}
+    ${Contact()}
   </main>`;
 };
 

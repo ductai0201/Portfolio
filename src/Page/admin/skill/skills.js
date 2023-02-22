@@ -5,8 +5,9 @@ const AdminSkills = () => {
   useEffect(() => {
     fetch("http://localhost:3000/skills")
       .then((Response) => Response.json())
-      .then((data) => setSkill(data));
+      .then((data) =>  setSkill(data));
   }, []);
+
   useEffect(() => {
     const btns = document.querySelectorAll(".btn-remove");
     for (let btn of btns) {
@@ -16,7 +17,7 @@ const AdminSkills = () => {
         fetch(`http://localhost:3000/skills/${id}`, {
           method: "DELETE",
         }).then(() => {
-          const newForm = skills.filter((skill) => skill.id !== id);
+          const newForm = skills.filter((skill) => skill.id != id);
           setSkill(newForm)
         });
 

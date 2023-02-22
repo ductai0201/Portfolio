@@ -21,9 +21,10 @@ const MainNav = () => {
                                         <ul class="nav navbar-nav navbar-right d-flex flex-row" style="width: auto;">
                                                 ${menus.map((menu) => {
                                                 return `
-                                                <li class="d-inline-block"><a href="#hero">${menu.name}</a></li>
+                                                <li class="d-inline-block"><a href="${menu.link}">${menu.name}</a></li>
                                                 `
                                                 }).join(' ')}
+                                                <li><a href="/login">login</a></li>
                                         </ul>
                         
                                 </div>

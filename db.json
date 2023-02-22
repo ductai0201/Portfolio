@@ -81,5 +81,27 @@
       "projects": "3",
       "projectsText": "Projects Delivered"
     }
+  ],
+  "contact": [
+    {
+      "name": "admin3",
+      "email": "tainddph21508@fpt.edu.vn",
+      "message": "abc",
+      "id": 2
+    }
+  ],
+  "users": [
+    {
+      "email": "ductaiuc@gmail.com",
+      "password": "$2a$10$7KSRzjDNIfWpFuzZjQN1ieVneOwN917uFLd0kBVObKNlRuvaHW0H2",
+      "name": "admin3",
+      "id": 2
+    },
+    {
+      "email": "ductai0201@gmail.com",
+      "password": "$2a$10$HYwjVmTifF9kFb0Ay/.8mOe0yDppmAqjFJecScbOW/PLmIRo8uWNW",
+      "name": "ductai0201",
+      "id": 3
+    }
   ]
 }

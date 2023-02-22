@@ -15,7 +15,7 @@ const Adminprojects = () => {
         fetch(`http://localhost:3000/projects/${id}`,{
             method: 'DELETE',
         }).then(()=>{
-            const newForm = projects.filter((project)=> project.id !== id);
+            const newForm = projects.filter((project)=> project.id != id);
             setProject(newForm);
         })
     })

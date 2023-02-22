@@ -1,4 +1,4 @@
-import { render, useEffect } from "../../../lib";
+import { render, router, useEffect } from "../../../lib";
 
 const AdminSkillAdd = () => {
   useEffect(() => {
@@ -15,7 +15,7 @@ const AdminSkillAdd = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formNew),
-      }).then(()=> console.log(formNew));
+      }).then(()=> router.navigate('admin/skills'));
     });
   });
   return `

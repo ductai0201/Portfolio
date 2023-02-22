@@ -17,12 +17,16 @@ import Adminprojects from "./src/Page/admin/projects/projects";
 import AdminCounterAdd from "./src/Page/admin/counter/counter-add";
 import AdminCounterEdit from "./src/Page/admin/counter/counter-edit";
 import AdminCounter from "./src/Page/admin/counter/counter";
+import AdminContact from "./src/Page/admin/contact/contact";
+import login from "./src/Page/login";
+import AdminInfor from "./src/Page/admin/infor/infor-add";
+import AdminInforAdd from "./src/Page/admin/infor/infor-add";
 // import projects from "./src/Page/projects";
 
 const app = document.querySelector("#app");
 
 router.on("/", () => render(homePage, app));
-router.on("/about", () => render(About, app));
+router.on("/login", () => render(login, app));
 // router.on("/projects", () => render(projects, app));
 //Admin
 router.on("/admin/about/add",()=> render(AdminAboutAdd,app));
@@ -48,5 +52,11 @@ router.on("/admin/projects",()=> render(Adminprojects,app));
 router.on("/admin/counter/add",()=> render(AdminCounterAdd,app));
 router.on("/admin/counter/:id/edit",({data})=> render(()=>AdminCounterEdit(data),app));
 router.on("/admin/counters",()=> render(AdminCounter,app));
+/*contact */
+router.on("admin/contacts",()=> render(AdminContact,app))
+/*information */
+router.on("admin/infors",()=> render(AdminInfor,app))
+router.on("admin/infor/add",()=> render(AdminInforAdd,app))
+
 router.notFound(() => notFound, app);
 router.resolve();

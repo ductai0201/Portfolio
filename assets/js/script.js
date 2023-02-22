@@ -26,22 +26,22 @@ $(function() {
     });
 
 	/* Progress bar */
-    var $section = $('.section-skills');
-    function loadDaBars() {
-	    $('.progress .progress-bar').progressbar({
-	        transition_delay: 500
-	    });
-    }
+    // var $section = $('.section-skills');
+    // function loadDaBars() {
+	//     $('.progress .progress-bar').progressbar({
+	//         transition_delay: 500
+	//     });
+    // }
     
-    $(document).bind('scroll', function(ev) {
-        var scrollOffset = $(document).scrollTop();
-        var containerOffset = $section.offset().top - window.innerHeight;
-        if (scrollOffset > containerOffset) {
-            loadDaBars();
-            // unbind event not to load scrolsl again
-            $(document).unbind('scroll');
-        }
-    });
+    // $(document).bind('scroll', function(ev) {
+    //     var scrollOffset = $(document).scrollTop();
+    //     var containerOffset = $section.offset().top - window.innerHeight;
+    //     if (scrollOffset > containerOffset) {
+    //         loadDaBars();
+    //         // unbind event not to load scrolsl again
+    //         $(document).unbind('scroll');
+    //     }
+    // });
 
     /* Counters  */
     if ($(".section-counters .start").length>0) {
