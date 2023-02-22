@@ -24,7 +24,7 @@ const MainNav = () => {
                                                 <li class="d-inline-block"><a href="${menu.link}">${menu.name}</a></li>
                                                 `
                                                 }).join(' ')}
-                                                <li><a href="/login">login</a></li>
+                                                <li><a href="login">login</a></li>
                                         </ul>
                         
                                 </div>

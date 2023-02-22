@@ -102,6 +102,12 @@
       "password": "$2a$10$HYwjVmTifF9kFb0Ay/.8mOe0yDppmAqjFJecScbOW/PLmIRo8uWNW",
       "name": "ductai0201",
       "id": 3
+    },
+    {
+      "email": "hitshandsome@gmail.com",
+      "password": "$2a$10$P8.amVdTURZJ8sM4l9rwuOI96YwFBI7gZ0LjBaeb.eG3LTjQ7X9uW",
+      "name": "ahihi",
+      "id": 4
     }
   ]
 }

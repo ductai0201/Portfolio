@@ -1,9 +1,8 @@
 import Swal from "sweetalert2";
+import bcrypt from "bcryptjs";
 import { router, useEffect, useState } from "../lib";
-
 const login = () => {
   const [users, setUser] = useState([]);
-
   useEffect(() => {
     const formLogin = document.querySelector("#login-form");
 
@@ -14,13 +13,11 @@ const login = () => {
 
       let response = await fetch("http://localhost:3000/users");
       let data = await response.json();
-      setUser(data);
-      const user = data.find(
-        (user) => user.name === formName && user.password === formPass
-      );
+	  setUser(data);
+      const user = data.find((user) => user.name === formName && bcrypt.compareSync(formPass, user.password));
 
       if (user) {
-        return Swal.fire("Good job!", "You clicked the button!", "success");
+        return Swal.fire("Good job!", "You clicked the button!", "success").then(window.location.href="/#/");
       } else {
         return Swal.fire({
           icon: "error",
@@ -38,7 +35,6 @@ const login = () => {
       e.preventDefault();
       const name = document.querySelector("#usernameRegis").value;
       const email = document.querySelector("#email").value;
-      console.log(email);
       const password = document.querySelector("#passwordRegis").value;
       const confirmpass = document.querySelector("#confirm-password").value;
 
@@ -61,9 +57,11 @@ const login = () => {
             "Content-Type": "application/json",
           },
           body: JSON.stringify(newForm),
+		  
         });
-
+		
         Swal.fire("Good job!", "You clicked the button!", "success");
+		register.reset();
       } else {
         Swal.fire({
           icon: "error",
@@ -83,7 +81,7 @@ const login = () => {
 					<div class="panel-heading">
 						<div class="row">
 							<div class="col-xs-6">
-								<a href="#" class="active" id="login-form-link">Login</a>
+								<a href="/login" class="active" id="login-form-link">Login</a>
 							</div>
 							<div class="col-xs-6">
 								<a href="#" id="register-form-link">Register</a>
