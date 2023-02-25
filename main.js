@@ -23,6 +23,10 @@ import login from "./src/Page/login";
 import AdminInforAdd from "./src/Page/admin/infor/infor-add";
 import AdminInfor from "./src/Page/admin/infor/infor";
 import projectDetail from "./src/Page/projectDetail";
+import adminPage from "./src/Page/admin";
+import AdminFeedBackAdd from "./src/Page/admin/feedback/feedback-add";
+import AdminFeedBackEdit from "./src/Page/admin/feedback/feedback-edit";
+import AdminFeedBack from "./src/Page/admin/feedback/feedback";
 // import projects from "./src/Page/projects";
 
 const app = document.querySelector("#app");
@@ -32,6 +36,10 @@ router.on("/login", () => render(login, app));
 router.on("/project/:id", ({data}) => render(()=>projectDetail(data), app));
 // router.on("/projects", () => render(projects, app));
 //Admin
+//
+router.on("/admin/",()=> render(adminPage,app));
+
+//
 router.on("/admin/about/add",()=> render(AdminAboutAdd,app));
 router.on("/admin/about/:id/edit",({data})=> render(()=>AdminAboutEdit(data),app));
 router.on("/admin/abouts",()=> render(AdminAbout,app));
@@ -56,10 +64,15 @@ router.on("/admin/counter/add",()=> render(AdminCounterAdd,app));
 router.on("/admin/counter/:id/edit",({data})=> render(()=>AdminCounterEdit(data),app));
 router.on("/admin/counters",()=> render(AdminCounter,app));
 /*contact */
-router.on("admin/contacts",()=> render(AdminContact,app))
+router.on("/admin/contacts",()=> render(AdminContact,app))
 /*information */
-router.on("admin/infors",()=> render(AdminInfor,app))
-router.on("admin/infor/add",()=> render(AdminInforAdd,app))
+router.on("/admin/infors",()=> render(AdminInfor,app))
+router.on("/admin/infor/add",()=> render(AdminInforAdd,app))
+
+/*feedback */
+router.on("/admin/feedback/add",()=> render(AdminFeedBackAdd,app));
+router.on("/admin/feedback/:id/edit",({data})=> render(()=>AdminFeedBackEdit(data),app));
+router.on("/admin/feedbacks",()=> render(AdminFeedBack,app));
 
 router.notFound(() => notFound, app);
 router.resolve();

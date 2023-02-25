@@ -1,3 +1,4 @@
+import HeaderAdmin from "../../../components/HeaderAdmin";
 import { useEffect, useState } from "../../../lib";
 
 const AdminService = () => {
@@ -24,7 +25,9 @@ const AdminService = () => {
     }
   });
   return `
+  ${HeaderAdmin()}
             <div class="container pt-5">
+            <button type="button" class="btn btn-success text-light"><a href="/#/admin/service/add">Thêm</a></button>
                 <h1>Service</h1>
                 <table class="table table-bordered">
                         <thead>

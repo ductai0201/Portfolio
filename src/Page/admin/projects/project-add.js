@@ -24,6 +24,7 @@ const AdminProjectAdd = () => {
               git: projectGit.value,
               preview: projectPreview.value,
               time: projectTime.value,
+              date: "January 22,2022",
               technology: projectTechnology.value,
           }
 

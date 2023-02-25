@@ -13,6 +13,7 @@
       "preview": "https://github.com/ductai0201/Portfolio",
       "time": "30h",
       "technology": "HTML,CSS,JS",
+      "date": "January 22,2022",
       "id": 4
     },
     {
@@ -28,6 +29,7 @@
       "preview": "https://github.com/ductai0201/Portfolio",
       "time": "30h",
       "technology": "HTML,CSS,JS",
+      "date": "January 22,2022",
       "id": 5
     },
     {
@@ -43,6 +45,7 @@
       "preview": "https://github.com/ductai0201/Portfolio",
       "time": "30h",
       "technology": "HTML,CSS,JS",
+      "date": "January 22,2022",
       "id": 6
     }
   ],
@@ -114,6 +117,12 @@
       "password": "$2a$10$g2a6mz0re98Grwaza/dIjePV5BjQna7/Bwb2Ab/zm4AwAaN3ia78G",
       "name": "ductai020190",
       "id": 5
+    },
+    {
+      "email": "longmobietv@gmail.com",
+      "password": "$2a$10$G2hpK0VPLo2s/SKFZiEqYepESdpihRe68VlIcokkOrUbZdYbc746u",
+      "name": "abc",
+      "id": 6
     }
   ],
   "infor": [
@@ -122,6 +131,29 @@
       "content": "Font-end Developer",
       "avt": "https://res.cloudinary.com/dtiwyksp8/image/upload/v1677095972/Portfolio_ECMA/o8ehyohm8taghnnd02om.png",
       "id": 3
+    }
+  ],
+  "feedback": [
+    {
+      "name": "James",
+      "content": "James Henderson",
+      "avt": "https://res.cloudinary.com/dtiwyksp8/image/upload/v1677138320/Portfolio_ECMA/ho8tb43hwhtfkderucyk.jpg",
+      "job": "Manager",
+      "id": 1
+    },
+    {
+      "name": "John",
+      "content": "John Headorn",
+      "avt": "https://res.cloudinary.com/dtiwyksp8/image/upload/v1677138375/Portfolio_ECMA/ms9ktn5fau7uyn4c2i6e.jpg",
+      "job": "Manager",
+      "id": 3
+    },
+    {
+      "name": "Davies",
+      "content": "Davies Jr",
+      "avt": "https://res.cloudinary.com/dtiwyksp8/image/upload/v1677138461/Portfolio_ECMA/mxpewqam3fxtjsf1acif.jpg",
+      "job": "Manager",
+      "id": 4
     }
   ]
 }

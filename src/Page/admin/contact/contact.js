@@ -1,3 +1,4 @@
+import HeaderAdmin from "../../../components/HeaderAdmin";
 import { useEffect, useState } from "../../../lib";
 
 const AdminContact = () => {
@@ -23,13 +24,16 @@ const AdminContact = () => {
     }
   });
   return `
+            ${HeaderAdmin()}
                 <div class="container pt-5">
-                <h1>Skill</h1>
+                <h1>Contact</h1>
                 <table class="table table-bordered">
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Skill</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Messeage</th>
                                 <th>Option</th>
                             </tr>
                         </thead>
@@ -40,6 +44,8 @@ const AdminContact = () => {
                             <tr>
                                 <td>${index + 1}</td>
                                 <td>${contact.name}</td>
+                                <td>${contact.email}</td>
+                                <td>${contact.message}</td>
                                 <td>
                                 <button data-id="${
                                   contact.id

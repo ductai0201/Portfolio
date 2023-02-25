@@ -1,3 +1,4 @@
+import HeaderAdmin from "../../../components/HeaderAdmin";
 import { useEffect, useState } from "../../../lib";
 
 const AdminAbout = () => {
@@ -9,23 +10,26 @@ const AdminAbout = () => {
       .then((data) => setAbout(data));
   }, []);
 
-  // useEffect(() => {
-  //   const btns = document.querySelectorAll(".btn-remove");
-  //   for (let btn of btns) {
-  //     btn.addEventListener("click", function () {
-  //       const id = this.dataset.id;
-  //       fetch("http://localhost:3000/about/" + id, {
-  //         method: "DELETE",
-  //       }).then(() => {
-  //         const newMenu = about.filter((menu) => menu.id != id);
-  //         setAbout(newMenu);
-  //       });
-  //     });
-  //   }
-  // });
+  useEffect(() => {
+    const btns = document.querySelectorAll(".btn-remove");
+    for (let btn of btns) {
+      btn.addEventListener("click", function () {
+        const id = this.dataset.id;
+        fetch("http://localhost:3000/about/" + id, {
+          method: "DELETE",
+        }).then(() => {
+          const newMenu = about.filter((menu) => menu.id != id);
+          setAbout(newMenu);
+        });
+      });
+    }
+  });
 
   return `
+          ${HeaderAdmin()}
             <div class="container pt-5">
+          <button type="button" class="btn btn-success text-light"><a href="/#/admin/about/add">Thêm</a></button>
+
                 <h1>About</h1>
                 <table class="table table-bordered">
                     <thead>
@@ -43,6 +47,9 @@ const AdminAbout = () => {
                                 <td>${index + 1}</td>
                                 <td>${menu.content}</td>
                                 <td>
+                                <button data-id="${
+                                  menu.id
+                                }" class="btn btn-danger btn-remove">Remove</button>
                                 <a href="/#/admin/about/${
                                   menu.id
                                 }/edit">Edit</a>

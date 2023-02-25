@@ -1,3 +1,4 @@
+import HeaderAdmin from "../../../components/HeaderAdmin";
 import { useEffect, useState } from "../../../lib";
 
 const AdminInfor = () => {
@@ -24,7 +25,10 @@ const AdminInfor = () => {
     }
   });
   return `
+  ${HeaderAdmin()}
             <div class="container pt-5">
+            <button type="button" class="btn btn-success text-light"><a href="/#/admin/infor/add">Thêm</a></button>
+
               <h1>Information</h1>
               <table class="table table-bordered">
                       <thead>

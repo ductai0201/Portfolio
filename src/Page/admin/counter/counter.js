@@ -1,3 +1,4 @@
+import HeaderAdmin from "../../../components/HeaderAdmin";
 import { useEffect, useState } from "../../../lib";
 
 const AdminCounter = () => {
@@ -24,8 +25,11 @@ const AdminCounter = () => {
     }
   });
   return `
+  ${HeaderAdmin()}
   <div class="container pt-5">
-  <h1>counter</h1>
+  <button type="button" class="btn btn-success text-light"><a href="/#/admin/counter/add">Thêm</a></button>
+
+  <h1>Counter</h1>
   <table class="table table-bordered">
           <thead>
               <tr>

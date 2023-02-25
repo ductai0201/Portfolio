@@ -30,14 +30,14 @@ const AdminCounterAdd = () => {
     <form action="" id="form-add">
         <div class="form-group">
             <label for="" class="form-label">Counter Years</label>
-            <input type="text" class="form-control" id="counter-years">
-            <input type="text" class="form-control" id="counter-yearsText" placeholder="Text">
+            <input type="text" class="form-control" id="counter-years" placeholder="Years">
+            <input type="text" class="form-control" id="counter-yearsText" placeholder="Content">
         </div>
 
         <div class="form-group">
             <label for="" class="form-label">Counter Projects</label>
-            <input type="text" class="form-control" id="counter-projects">
-            <input type="text" class="form-control" id="counter-projectsText" placeholder="Text">
+            <input type="text" class="form-control" id="counter-projects" placeholder="Number Project">
+            <input type="text" class="form-control" id="counter-projectsText" placeholder="Content">
         </div>
         
         <button class="btn btn-primary mt-3">Thêm</button>
